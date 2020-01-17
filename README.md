@@ -23,4 +23,4 @@ Tạo dữ liệu giả là các text box với nền của CMND sử dụng trd
 
 Quá trình train: sử dụng ELU() tốt hơn so với RELU và ADAM thay vì SGD để loss xuống thấp nhất
                  
-Kết quả: độ chính xác trên tập test( tập test sử dụng ảnh thật và gán nhãn bằng tay) đạt 70%. 
+Kết quả: độ chính xác trên tập test( tập test sử dụng ảnh thật và gán nhãn bằng tay) đạt 70%, các nhãn dự đoán sai chủ yếu do dự đoán thừa 1-2 ký tự
