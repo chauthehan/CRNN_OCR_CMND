@@ -12,7 +12,7 @@ Sử dụng:
 File dic.txt chứa danh sách các chữ cái tiếng việt, tạo ra từ create_dic.py
 Command: "python create_dic.py"
 
-Dữ liệu được chia thành 3 file train test và val với format mẫu trong git. Sử dụng buid_dataset.py để lưu data dưới dạng file hdf5. 
+Dữ liệu được chia thành 3 file train test và val với format mẫu trong git. Sử dụng buid_dataset.py để lưu data dưới dạng file hdf5. Khi build file hdf5, ảnh sẽ được để ngược 90 độ cho phù hợp với timesteps.
 Command: "python build_dataset.py --dataset "PATH_TO_DATASET"
 Note: Đổi tên file hdf5 trong file python tùy mục đích sử dụng
 
@@ -22,5 +22,5 @@ Note: Sửa đường dẫn trong file để file chứa data để sử dụng.
 Tạo dữ liệu giả là các text box với nền của CMND sử dụng trdg https://github.com/Belval/TextRecognitionDataGenerator    (tự tạo nền của cho ảnh)
 
 Quá trình train: sử dụng ELU() tốt hơn so với RELU và ADAM thay vì SGD để loss xuống thấp nhất
-
+                 
 Kết quả: độ chính xác trên tập test( tập test sử dụng ảnh thật và gán nhãn bằng tay) đạt 70%. 
