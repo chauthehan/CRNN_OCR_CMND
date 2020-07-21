@@ -25,3 +25,5 @@ Quá trình train: sử dụng ELU() tốt hơn so với RELU và ADAM thay vì 
 Command:  python train.py --checkpoints "PATH_TO_CHECKPOINT" --model "PATH_TO_MODEL" --start_epoch "EPOCH_TO_START_AT"
 Kết quả: độ chính xác trên tập test( tập test sử dụng ảnh thật và gán nhãn bằng tay) đạt 70%, các nhãn dự đoán sai chủ yếu do dự đoán thừa 1-2 ký tự
 Command: python prediction.py --model "MODEL_TRAINED" --images "HDF5_DATA"
+
+*IMPORTANT NOTE: chỉnh sửa lại cấu trúc mạng , nhất là ở bước reshape về timestep.
